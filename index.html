@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>Long Roads</title>
+  <meta name="description" content="Endless 3D driving. Keep going." />
+  <meta property="og:title" content="Long Roads" />
+  <meta property="og:description" content="Endless 3D driving. Keep going." />
+  <meta property="og:type" content="website" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="hud">
+    <div id="speed">0 <span>km/h</span></div>
+    <div id="distance">0 <span>m</span></div>
+  </div>
+  <div id="hint">WASD / arrows · space brake · R restart</div>
+  <div id="overlay" class="hidden">
+    <p class="title">Long Roads</p>
+    <p class="sub">Press any key or tap to drive</p>
+  </div>
+  <script type="importmap">
+  {
+    "imports": {
+      "three": "https://cdn.jsdelivr.net/npm/three@0.170.0/build/three.module.js",
+      "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.170.0/examples/jsm/"
+    }
+  }
+  </script>
+  <script type="module" src="main.js"></script>
+</body>
+</html>
